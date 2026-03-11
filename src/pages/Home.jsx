@@ -1,10 +1,11 @@
 import Button from "../components/Button";
 
 const Home = ()=>{
-    return<>
+    return(<>
+    <Button/>
     Esta es la Home
     
-    </>
+    </>)
 }
 
 export default Home

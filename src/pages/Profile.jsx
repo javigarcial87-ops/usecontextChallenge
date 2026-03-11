@@ -1,10 +1,11 @@
 import Button from "../components/Button";
 
 const Profile = ()=>{
-    return<>
+    return(<>
+    <Button/>
     Esta es la Profile
     
-    </>
+    </>)
 }
 
 export default Profile
