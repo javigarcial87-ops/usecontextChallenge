@@ -1,5 +1,5 @@
 import{Outlet,Link} from "react-router-dom"
-import Button from "./Button"
+import Button from "../Button"
 
 const Layout=()=>{
     return(
