@@ -3,7 +3,7 @@ import Button from "./Button"
 
 const Layout=()=>{
     return(
-        <>/
+        <>
         <nav>/
             <Link to="/" >Home</Link>
             <Link to="/profile" >Profile</Link>
