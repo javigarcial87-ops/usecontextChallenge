@@ -3,7 +3,8 @@ import Button from "../components/Button";
 const Home = ()=>{
     return(<>
     <Button/>
-    Esta es la Home
+    <h2>Esta es la Home</h2>
+    
     
     </>)
 }

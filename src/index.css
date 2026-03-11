@@ -1,12 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  color-scheme: light dark;
 }
 
 body {
   margin: 0;
 }
+
 .App {
   display: flex;
   justify-content: center;
@@ -21,6 +20,6 @@ body {
 }
 
 .App.dark {
-  background-color: #1e1e1e;
+  background-color: #242424;
   color: white;
 }
