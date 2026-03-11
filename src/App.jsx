@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ThemeProvider, ThemeContext } from './themes/ThemeContext';
 import RoutesApp from './routes/RoutesApp';
-import './App.css'; // Archivo de estilos CSS
+
 
 
 function AppContent() {
