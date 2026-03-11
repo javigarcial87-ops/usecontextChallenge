@@ -2,12 +2,14 @@ import { useContext } from "react";
 import{ThemeContext} from "../themes/ThemeContext" 
 
 const Button = ()=>{
-    const {toggleTheme} = useContext(ThemeContext)
+    const {theme,toggleTheme} = useContext(ThemeContext)
 
     return(
+        
         <button onClick={toggleTheme}>
-        Cambiar tema
+        Cambiar tema{theme==="light"?"Dark":"Light"}
         </button>
+        
     )
 }
 
