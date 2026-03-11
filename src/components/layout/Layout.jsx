@@ -1,20 +1,27 @@
-import{Outlet,Link} from "react-router-dom"
+import { Outlet, Link } from "react-router-dom"
+import { useContext } from "react"
+import { ThemeContext } from "../../themes/ThemeContext"
 import Button from "../Button"
 
-const Layout=()=>{
-    return(
-        <>
-        <nav>/
-            <Link to="/" >Home</Link>
-            <Link to="/profile" >Profile</Link>
-            <Link to="/myjob" >MyJob</Link>
-        </nav>
+const Layout = () => {
 
-        <Button />
+  const { theme } = useContext(ThemeContext)
 
-        <Outlet />
-        </>
-    )
-}
+  return (
+    <div className={`App ${theme}`}>
+
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/profile">Profile</Link>
+        <Link to="/myjob">MyJob</Link>
+      </nav>
+
+      <Button />
+
+      <Outlet />
+
+    </div>
+  );
+};
 
 export default Layout

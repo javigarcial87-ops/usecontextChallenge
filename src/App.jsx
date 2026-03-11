@@ -10,7 +10,7 @@ function AppContent() {
 
   return(
     <>
-    <section className={`App${theme}`}>
+    <section className={`App ${theme}`}>
     <RoutesApp/>
     </section>
     </>
