@@ -1,26 +1,27 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Layout from "../layout/Layout";
-import Home from "../pages/Home";
-import Profile from "../pages/Profile";
-import MyJob from "../pages/MyJob";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import Layout from"../src/Layout"
+import Home from "../pages/Home"
+import Profile from "../pages/Profile"
+import MyJob from "../pages/MyJob"
 
 const RoutesApp = () => {
   return (
-    <BrowserRouter>
+    <Router>
+
+      <nav>
+        <Link to="/">Home</Link> | 
+        <Link to="/profile">Profile</Link> | 
+        <Link to="/myjob">MyJob</Link>
+      </nav>
 
       <Routes>
-        <Route path="/" element={<Layout />}>
-
-          <Route index element={<Home />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="myjob" element={<MyJob />} />
-
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/myjob" element={<MyJob />} />
       </Routes>
 
-    </BrowserRouter>
-  );
-};
+    </Router>
+  )
+}
 
 export default RoutesApp;
